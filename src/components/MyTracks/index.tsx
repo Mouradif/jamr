@@ -9,6 +9,6 @@ const MyTracks = (): ReactElement => {
       <Typography variant="h2">MyTracks</Typography>
     </Styled.MyTracks>
   );
-}
+};
 
 export default MyTracks;

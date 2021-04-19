@@ -16,7 +16,7 @@ ReactDOM.render(
       <MuiThemeProvider theme={theme}>
         <ThemeProvider theme={theme}>
           <Router>
-            <CssBaseline/>
+            <CssBaseline />
             <GlobalStyle />
             <App />
           </Router>

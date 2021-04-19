@@ -15,7 +15,7 @@ const Copyright = (): ReactElement => {
       {' - All Rights Reserved'}
     </Typography>
   );
-}
+};
 
 const SocialIcons = ({ className }: { className?: string }): ReactElement => {
   return (
@@ -25,18 +25,20 @@ const SocialIcons = ({ className }: { className?: string }): ReactElement => {
       <TelegramIcon />
     </Styled.SocialIcons>
   );
-}
+};
 
 const Footer = (): ReactElement => {
   return (
     <Styled.Footer>
       <Toolbar>
-        <SocialIcons className="toolbar-left"/>
+        <SocialIcons className="toolbar-left" />
         <Copyright />
-        <Typography className="toolbar-right" variant="body1" color="textSecondary">Built on Skynet</Typography>
+        <Typography className="toolbar-right" variant="body1" color="textSecondary">
+          Built on Skynet
+        </Typography>
       </Toolbar>
     </Styled.Footer>
   );
-}
+};
 
 export default Footer;

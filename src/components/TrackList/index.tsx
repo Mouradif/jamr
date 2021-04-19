@@ -9,6 +9,6 @@ const TrackList = (): ReactElement => {
       <Typography variant="h2">TrackList</Typography>
     </Styled.TrackList>
   );
-}
+};
 
 export default TrackList;

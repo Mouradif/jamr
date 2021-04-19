@@ -21,12 +21,12 @@ const Navbar = (): ReactElement => {
   return (
     <Styled.Navbar position="fixed">
       <Toolbar>
-        <LogoIcon className="navbar-logo"/>
+        <LogoIcon className="navbar-logo" />
         <NavMenu />
         <NavbarUser />
       </Toolbar>
     </Styled.Navbar>
   );
-}
+};
 
 export default Navbar;

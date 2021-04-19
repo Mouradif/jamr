@@ -12,7 +12,6 @@ const TrackList = styled.section`
   }
 `;
 
-
 const Styled = { TrackList };
 
 export default Styled;
