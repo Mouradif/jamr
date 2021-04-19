@@ -1,12 +1,28 @@
+import { CssBaseline, ThemeProvider as MuiThemeProvider } from '@material-ui/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { ThemeProvider } from 'styled-components';
+import { StylesProvider } from '@material-ui/core/styles';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import GlobalStyle from './index.styled';
+import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StylesProvider injectFirst>
+      <MuiThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+          <Router>
+            <CssBaseline/>
+            <GlobalStyle />
+            <App />
+          </Router>
+        </ThemeProvider>
+      </MuiThemeProvider>
+    </StylesProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
