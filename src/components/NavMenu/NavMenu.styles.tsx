@@ -14,6 +14,7 @@ const NavMenu = styled.section`
     }
   }
   .MuiButton-root.active {
+    border-radius: 0;
     color: ${({ theme }) => theme.palette.text.primary};
 
     svg {
