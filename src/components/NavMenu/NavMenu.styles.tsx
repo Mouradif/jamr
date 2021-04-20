@@ -8,6 +8,10 @@ const NavMenu = styled.section`
     svg {
       fill: ${({ theme }) => theme.palette.text.secondary};
     }
+
+    .MuiButton-label {
+      font-size: 1rem;
+    }
   }
   .MuiButton-root.active {
     color: ${({ theme }) => theme.palette.text.primary};

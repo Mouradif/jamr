@@ -1,3 +1,4 @@
+import Container from '@material-ui/core/Container';
 import React, { ReactElement } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
@@ -13,17 +14,19 @@ const App = (): ReactElement => {
     <>
       <Navbar />
       <Styled.App className="App">
-        <Switch>
-          <Route path="/my-tracks">
-            <MyTracks />
-          </Route>
-          <Route path="/help">
-            <Help />
-          </Route>
-          <Route path="/">
-            <TrackList />
-          </Route>
-        </Switch>
+        <Container maxWidth="lg">
+          <Switch>
+            <Route path="/my-tracks">
+              <MyTracks />
+            </Route>
+            <Route path="/help">
+              <Help />
+            </Route>
+            <Route path="/">
+              <TrackList />
+            </Route>
+          </Switch>
+        </Container>
       </Styled.App>
       <Footer />
     </>

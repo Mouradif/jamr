@@ -1,4 +1,5 @@
 import Avatar from '@material-ui/core/Avatar';
+import Container from '@material-ui/core/Container';
 import Toolbar from '@material-ui/core/Toolbar';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import React, { ReactElement } from 'react';
@@ -21,9 +22,11 @@ const Navbar = (): ReactElement => {
   return (
     <Styled.Navbar position="fixed">
       <Toolbar>
-        <LogoIcon className="navbar-logo" />
-        <NavMenu />
-        <NavbarUser />
+        <Container maxWidth="lg">
+          <LogoIcon className="navbar-logo" />
+          <NavMenu />
+          <NavbarUser />
+        </Container>
       </Toolbar>
     </Styled.Navbar>
   );

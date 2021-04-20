@@ -13,8 +13,12 @@ const Footer = styled.footer`
       min-height: ${({ theme }) => theme.spacing(10)}px;
     }
 
+    .MuiContainer-root {
+      display: flex;
+    }
+
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     .toolbar-left,

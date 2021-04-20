@@ -12,6 +12,10 @@ const Navbar = styled(AppBar)`
       min-height: ${({ theme }) => theme.spacing(10)}px;
     }
 
+    .MuiContainer-root {
+      display: flex;
+    }
+
     .navbar-logo,
     .navbar-user {
       flex: 1;
