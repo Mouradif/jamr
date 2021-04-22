@@ -9,6 +9,6 @@ const Help = (): ReactElement => {
       <Typography variant="h2">Help</Typography>
     </Styled.Help>
   );
-}
+};
 
 export default Help;

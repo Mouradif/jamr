@@ -12,7 +12,6 @@ const Help = styled.footer`
   }
 `;
 
-
 const Styled = { Help };
 
 export default Styled;

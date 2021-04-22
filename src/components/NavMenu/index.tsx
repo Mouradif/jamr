@@ -17,28 +17,24 @@ const NavMenu = ({ className }: NavMenuProps): ReactElement => {
         <Button
           component={NavLink}
           to="/track-list"
-          startIcon={<SvgIcon component={TrackListIcon} viewBox="0 0 24 24"/>}
+          startIcon={<SvgIcon component={TrackListIcon} viewBox="0 0 24 24" />}
         >
           Track List
         </Button>
         <Button
           component={NavLink}
           to="/my-tracks"
-          startIcon={<SvgIcon component={MyTracksIcon} viewBox="0 0 24 18"/>}
+          startIcon={<SvgIcon component={MyTracksIcon} viewBox="0 0 24 18" />}
         >
           My Tracks
         </Button>
-        <Button
-          component={NavLink}
-          to="/help"
-          startIcon={<HelpIcon />}
-        >
+        <Button component={NavLink} to="/help" startIcon={<HelpIcon />}>
           Help
         </Button>
       </Typography>
     </Styled.NavMenu>
   );
-}
+};
 
 interface NavMenuProps {
   className?: string;

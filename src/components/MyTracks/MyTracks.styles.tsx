@@ -12,7 +12,6 @@ const MyTracks = styled.section`
   }
 `;
 
-
 const Styled = { MyTracks };
 
 export default Styled;

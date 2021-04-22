@@ -11,14 +11,17 @@ const theme = createMuiTheme({
     },
     text: {
       primary: '#FFF',
-      secondary: '#5F5F6F'
-    }
-    // primary: {
-    //   main: purple[500],
-    // },
-    // secondary: {
-    //   main: green[500],
-    // },
+      secondary: '#5F5F6F',
+    },
+    primary: {
+      main: '#4447E2',
+    },
+    secondary: {
+      main: '#F62E5E',
+    },
+  },
+  shape: {
+    borderRadius: 15,
   },
 });
 

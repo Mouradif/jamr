@@ -2,17 +2,22 @@ import styled from 'styled-components';
 import AppBar from '@material-ui/core/AppBar';
 
 const Navbar = styled(AppBar)`
-  background-color: ${({theme}) => theme.palette.background.paper};
-  
+  background-color: ${({ theme }) => theme.palette.background.paper};
+
   .MuiToolbar-root {
     display: flex;
     justify-content: center;
 
-    ${({theme})=> theme.breakpoints.up('sm')} {
-      min-height: ${({theme}) => theme.spacing(10)}px;
+    ${({ theme }) => theme.breakpoints.up('sm')} {
+      min-height: ${({ theme }) => theme.spacing(10)}px;
     }
 
-    .navbar-logo, .navbar-user {
+    .MuiContainer-root {
+      display: flex;
+    }
+
+    .navbar-logo,
+    .navbar-user {
       flex: 1;
     }
 
