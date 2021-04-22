@@ -30,7 +30,7 @@ module.exports = {
     'react/prop-types': 'off',
     'react/require-default-props': 'off',
     'prettier/prettier': [
-      'error',
+      'warn',
       {
         endOfLine: 'auto',
       },
